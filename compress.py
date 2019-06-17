@@ -67,7 +67,7 @@ def generateThumbnail(src_dir, des_dir):
             im = im.rotate(get_rotate_degree(im))
             get_crop_region(im.size[0], im.size[1])
             copy = im.crop(get_crop_region(im.size[0], im.size[1]))
-            copy.thumbnail((120, 120))
+            copy.thumbnail((600, 600))
             copy.save(des_dir+infile, 'JPEG')
             print("successfully compress " + infile)
 
